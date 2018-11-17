@@ -17,6 +17,10 @@ public class UserController {
     @Autowired
     private UserRepository repository;
 
+    /**
+     * get all users
+     * @return
+     */
     @GetMapping
     public Iterable<User> findAll() {
         return repository.findAll();
